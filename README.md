@@ -589,13 +589,6 @@ Take the example of any vehicle. It comprises wheels, horsepower, and fuel or ga
 
 A vehicle can also have certain functions, such as halting, driving, and speeding. Even these functions form the data members of the class Vehicle. You can, therefore, define a class as a combination of characteristics and functions.
 
-#### Class Hierarchy
-
-A part of the class hierarchy is as shown in the figure below.
-
-![!Wikipedia](http://rubylearning.com/images/class.png)
-
-This diagram means that all objects inherit their methods from "Object".
 
 #### Defining Classes (Objects)
 
@@ -761,7 +754,37 @@ That's it. In order to understand how attr_reader, attr_writer, and attr_accesso
 [Exercises: Getters and Setters](http://www.rubeque.com/problems/getters-and-setters?solution_code=attr_accessor)  
 [Exercise: Class Test](http://www.rubeque.com/problems/class-test)  
 [Exercise: Queue Continuum](http://www.rubeque.com/problems/queue-continuum)  
-[Exercise: Baby Got Stacks](http://www.rubeque.com/problems/baby-got-stacks)  
+[Exercise: Baby Got Stacks](http://www.rubeque.com/problems/baby-got-stacks)
+
+### Inheritance
+
+Inheritance is a relation between two classes. We know that all cats are mammals, and all mammals are animals. The benefit of inheritance is that classes lower down the hierarchy get the features of those higher up, but can also add specific features of their own. If all mammals breathe, then all cats breathe. In Ruby, a class can only inherit from a single other class. Some other languages support multiple inheritance, a feature that allows classes to inherit features from multiple classes, but Ruby doesn't support this.
+
+We can express this concept in Ruby - see the p033mammal.rb program below:
+
+class Mammal  
+  def breathe  
+    puts "inhale and exhale"  
+  end  
+end  
+  
+class Cat < Mammal  
+  def speak  
+    puts "Meow"  
+  end  
+end  
+  
+rani = Cat.new  
+rani.breathe  
+rani.speak
+
+#### Class Hierarchy
+
+A part of the class hierarchy is as shown in the figure below.
+
+![!Wikipedia](http://rubylearning.com/images/class.png)
+
+This diagram means that all objects inherit their methods from "Object".
 
 For more practice, please use the following:
 
