@@ -759,16 +759,6 @@ That's it. In order to understand how attr_reader, attr_writer, and attr_accesso
 [Exercise: Queue Continuum](http://www.rubeque.com/problems/queue-continuum)  
 [Exercise: Baby Got Stacks](http://www.rubeque.com/problems/baby-got-stacks)  
 
-### Debugging
-
-Debugging should be more about logic errors. Why is something occurring in a way it shouldn’t?
-
-Examples:
-* Selecting a column number to play results in the wrong row
-* Board is not displaying correctly
-* Game end scenario does not work
-* A player’s mark is wrong 
-
 For more practice, please use the following:
 
 * [Ruby Monk](http://rubymonk.com/learning/books/1-ruby-primer)
