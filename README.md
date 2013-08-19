@@ -756,12 +756,13 @@ That's it. In order to understand how attr_reader, attr_writer, and attr_accesso
 [Exercise: Queue Continuum](http://www.rubeque.com/problems/queue-continuum)  
 [Exercise: Baby Got Stacks](http://www.rubeque.com/problems/baby-got-stacks)
 
-### Inheritance
+#### Inheritance
 
 Inheritance is a relation between two classes. We know that all cats are mammals, and all mammals are animals. The benefit of inheritance is that classes lower down the hierarchy get the features of those higher up, but can also add specific features of their own. If all mammals breathe, then all cats breathe. In Ruby, a class can only inherit from a single other class. Some other languages support multiple inheritance, a feature that allows classes to inherit features from multiple classes, but Ruby doesn't support this.
 
 We can express this concept in Ruby - see the p033mammal.rb program below:
 
+```ruby
 class Mammal  
   def breathe  
     puts "inhale and exhale"  
@@ -777,6 +778,7 @@ end
 rani = Cat.new  
 rani.breathe  
 rani.speak
+```
 
 #### Class Hierarchy
 
