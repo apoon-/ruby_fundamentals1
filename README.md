@@ -1,8 +1,12 @@
 #Ruby Fundamentals
 
+###Submission
+
+Please create a folder called "ruby_fundamentals" with a ruby file for each of the sections of exercises in the folder.
+
 ###Intro
 
-As you go through this tutorial, make sure that you are referencing [Stack Overflow](http://stackoverflow.com/), [Ruby docs](http://ruby-doc.org/core-2.0/), [API Dock](http://apidock.com/ruby), [Ruby Monk](http://rubymonk.com/learning/books/1-ruby-primer) explanations and using the [Codecademy Ruby Glossary](http://www.codecademy.com/glossary/ruby) to really understand the fundamentals. Please create a folder called "Ruby Fundamentals" with a ruby file with the question and answer for each exercise in the folder.
+As you go through this tutorial, make sure that you are referencing [Stack Overflow](http://stackoverflow.com/), [Ruby docs](http://ruby-doc.org/core-2.0/), [API Dock](http://apidock.com/ruby), [Ruby Monk](http://rubymonk.com/learning/books/1-ruby-primer) explanations and using the [Codecademy Ruby Glossary](http://www.codecademy.com/glossary/ruby) to really understand the fundamentals. 
 
 #### IRB
 
