@@ -2,7 +2,7 @@
 
 ###Submission
 
-Please create a folder called "ruby_fundamentals" with a ruby file for each of the sections of exercises in the folder. Please make sure to commit after each exercise to practice version control.
+Please create a folder called "ruby_fundamentals" with a ruby file for each of the sections of exercises in the folder. Please make sure to commit after each exercise to practice using git.
 
 ###Intro
 
