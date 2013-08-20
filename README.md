@@ -629,6 +629,10 @@ shelly = Person.new
 ```
 
 
+#### Class and Instance Methods
+
+Class methods are methods that are called on a class and instance methods are methods that are called on an instance of a class.
+
 #### Instance Methods
 
 Instance methods only work on an instance and thus you have to create a new instance to use them (Person.new). Again, there are more ways to define instance methods than this, especially if you look into meta programming. The below is an example of an instance method.
@@ -666,11 +670,17 @@ p.new_method # #<Person:0x007feaf118aef0>
 
 #### Class Methods
 
+The following is an example of a class method. When you see self.method_name it is immediately apparent to me that this is a class method.
+
+So when would you use a class method? Class methods are for anything that does not deal with an individual instance of a class.
+
+```ruby
 class Calculator
    def self.add
       puts "Hello Ruby!"
    end
 end
+```
 
 #### Readers and Writers
 
