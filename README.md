@@ -631,11 +631,15 @@ shelly = Person.new
 
 #### Instance Methods
 
+Instance methods only work on an instance and thus you have to create a new instance to use them (Person.new). Again, there are more ways to define instance methods than this, especially if you look into meta programming. The below is an example of an instance method.
+
+```ruby
 class Person
    def hello
       puts "Hello Ruby!"
    end
 end
+```
 
 #### The self keyword
 
