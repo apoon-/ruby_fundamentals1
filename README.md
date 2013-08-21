@@ -1,8 +1,12 @@
 #Ruby Fundamentals
 
+###Submission
+
+Please create a folder called "ruby_fundamentals" with a ruby file for each of the sections of exercises in the folder. Please make sure to commit after each exercise to practice using git.
+
 ###Intro
 
-As you go through this tutorial, make sure that you are referencing [Stack Overflow](http://stackoverflow.com/), [Ruby docs](http://ruby-doc.org/core-2.0/), [API Dock](http://apidock.com/ruby), [Ruby Monk](http://rubymonk.com/learning/books/1-ruby-primer) explanations and using the [Codecademy Ruby Glossary](http://www.codecademy.com/glossary/ruby) to really understand the fundamentals. Please create a folder called "Ruby Fundamentals" with a ruby file with the question and answer for each exercise in the folder.
+As you go through this tutorial, make sure that you are referencing [Stack Overflow](http://stackoverflow.com/), [Ruby docs](http://ruby-doc.org/core-2.0/), [API Dock](http://apidock.com/ruby), [Ruby Monk](http://rubymonk.com/learning/books/1-ruby-primer) explanations and using the [Codecademy Ruby Glossary](http://www.codecademy.com/glossary/ruby) to really understand the fundamentals. 
 
 #### IRB
 
@@ -585,13 +589,6 @@ Take the example of any vehicle. It comprises wheels, horsepower, and fuel or ga
 
 A vehicle can also have certain functions, such as halting, driving, and speeding. Even these functions form the data members of the class Vehicle. You can, therefore, define a class as a combination of characteristics and functions.
 
-#### Class Hierarchy
-
-A part of the class hierarchy is as shown in the figure below.
-
-![!Wikipedia](http://rubylearning.com/images/class.png)
-
-This diagram means that all objects inherit their methods from "Object".
 
 #### Defining Classes (Objects)
 
@@ -632,13 +629,21 @@ shelly = Person.new
 ```
 
 
+#### Class and Instance Methods
+
+Class methods are methods that are called on a class and instance methods are methods that are called on an instance of a class.
+
 #### Instance Methods
 
+Instance methods only work on an instance and thus you have to create a new instance to use them (Person.new). Again, there are more ways to define instance methods than this, especially if you look into meta programming. The below is an example of an instance method.
+
+```ruby
 class Person
    def hello
       puts "Hello Ruby!"
    end
 end
+```
 
 #### The self keyword
 
@@ -665,11 +670,17 @@ p.new_method # #<Person:0x007feaf118aef0>
 
 #### Class Methods
 
+The following is an example of a class method. When you see self.method_name it is immediately apparent to me that this is a class method.
+
+So when would you use a class method? Class methods are for anything that does not deal with an individual instance of a class.
+
+```ruby
 class Calculator
    def self.add
       puts "Hello Ruby!"
    end
 end
+```
 
 #### Readers and Writers
 
@@ -757,17 +768,39 @@ That's it. In order to understand how attr_reader, attr_writer, and attr_accesso
 [Exercises: Getters and Setters](http://www.rubeque.com/problems/getters-and-setters?solution_code=attr_accessor)  
 [Exercise: Class Test](http://www.rubeque.com/problems/class-test)  
 [Exercise: Queue Continuum](http://www.rubeque.com/problems/queue-continuum)  
-[Exercise: Baby Got Stacks](http://www.rubeque.com/problems/baby-got-stacks)  
+[Exercise: Baby Got Stacks](http://www.rubeque.com/problems/baby-got-stacks)
 
-### Debugging
+#### Inheritance
 
-Debugging should be more about logic errors. Why is something occurring in a way it shouldn’t?
+Inheritance is a relation between two classes. We know that all cats are mammals, and all mammals are animals. The benefit of inheritance is that classes lower down the hierarchy get the features of those higher up, but can also add specific features of their own. If all mammals breathe, then all cats breathe. In Ruby, a class can only inherit from a single other class. Some other languages support multiple inheritance, a feature that allows classes to inherit features from multiple classes, but Ruby doesn't support this.
 
-Examples:
-* Selecting a column number to play results in the wrong row
-* Board is not displaying correctly
-* Game end scenario does not work
-* A player’s mark is wrong 
+We can express this concept in Ruby - see the p033mammal.rb program below:
+
+```ruby
+class Mammal  
+  def breathe  
+    puts "inhale and exhale"  
+  end  
+end  
+  
+class Cat < Mammal  
+  def speak  
+    puts "Meow"  
+  end  
+end  
+  
+rani = Cat.new  
+rani.breathe  
+rani.speak
+```
+
+#### Class Hierarchy
+
+A part of the class hierarchy is as shown in the figure below.
+
+![!Wikipedia](http://rubylearning.com/images/class.png)
+
+This diagram means that all objects inherit their methods from "Object".
 
 For more practice, please use the following:
 
