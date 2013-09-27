@@ -71,7 +71,6 @@ Ruby integers are objects of class **Fixnum** or **Bignum**. The Fixnum and Bign
 [Exercise: Maximum](http://www.rubeque.com/problems/maximum)  
 [Exercise: Subtracting Out The Sugar](http://www.rubeque.com/problems/subtracting-out-the-sugar)  
 [Exercise: Your Favorite and Mine, Fibonacci!](http://www.rubeque.com/problems/your-favorite-and-mine-comma--fibonacci-excl-)  
-[Exercise: Happy Numbers](http://www.rubeque.com/problems/happy-numbers)  
 [Exercise: Prime Factors](http://www.rubeque.com/problems/prime-factors)  
 
 ####Strings
