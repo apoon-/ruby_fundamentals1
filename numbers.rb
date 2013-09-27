@@ -30,7 +30,7 @@
 # puts fibo_finder(7)
 # puts fibo_finder(10)
 
-# Exercise: Happy numbers
+# Exercise: Happy numbers (not required)
 
 # def happy?(n)
 #   if n == 1 # Base case
