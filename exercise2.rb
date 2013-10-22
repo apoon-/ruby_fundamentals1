@@ -35,3 +35,9 @@ puts result
 math = 45628 * 7839
 
 puts "45628 times 7839 equals #{math}"
+
+#Problem 4 - Boolean
+
+result = (true && false) || (false && true) || !(false && false)
+
+puts "The answer to the Boolean is #{result}"
